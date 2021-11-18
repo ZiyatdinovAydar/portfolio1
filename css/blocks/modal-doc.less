@@ -1,0 +1,85 @@
+// main: ../index.less
+
+.modal-doc {
+    display: flex;
+}
+
+.modal-doc_preview {
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+
+    @media @mobile {
+        width: 50%;
+        overflow: scroll;
+        height: 200px;
+    }
+}
+
+.modal-doc_photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 50%;
+
+    transform: translate3d(-50%, -50%, 0);
+
+    &:hover {
+        width: 100%;
+    }
+
+    @media @mobile {
+        width: 50%;
+    }
+}
+
+.modal-doc_content {
+    width: 35%;
+    padding: 7rem 1rem 15rem 1.73rem;
+    position: relative;
+
+    @media @mobile {
+        width: 50%;
+        padding: 3rem 1rem 1rem 1.5rem;
+    }
+}
+
+.modal-doc_header {
+    margin-bottom: 0.7rem;
+}
+
+.modal-doc_title {
+    margin-bottom: 0.4rem;
+    font-size: 2.12rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media @mobile {
+        font-size: 1rem;
+    }
+}
+
+.modal-doc_info {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: @gray;
+    text-transform: uppercase;
+
+    @media @mobile {
+        font-size: 0.5rem;
+    }
+}
+
+.modal-doc_text {
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    line-height: 2;
+    color: @gray;
+    font-weight: 300;
+
+    @media @mobile {
+        font-size: 0.3rem;
+    }
+}
